@@ -25,15 +25,26 @@ $H_0$ There is no relationship between where you sit in class and how much you d
 $H_A$ There is a relationship between where you sit in class and how much you drink.  
 
 
+# Methods 
+Seat is a categorical variable.   
+Alcohol is a numerical variable. 
+
+
+
+# Data Summaries. 
+
 
 ## Now add in boxplot
 
-
+```{r}
+boxplot(alcohol~Seat,data=davisdata)
+```
+    
+    
+  The plot show that students who sit in the back tend to drink more oz/per week of alcohol than students who sit in the front or in the middle of the class.  
   
   
   
-
-
 
 ## Numerical Summaries  
 
