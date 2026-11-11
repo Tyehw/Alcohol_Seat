@@ -46,8 +46,14 @@ boxplot(alcohol~Seat,data=davisdata)
   
   
 
-## Numerical Summaries  
+## Numerical Summaries
 
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
+
+The numerical summary show that the students who sit in the back of the class drink 7 times more oz/per week of alcohol than the students in the front and middle who drink 2 - 4 oz/per week. 
 ## Inferential Tests
 
 ## Conclusions
