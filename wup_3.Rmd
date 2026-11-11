@@ -56,6 +56,19 @@ favstats(alcohol~Seat,data=ucdavis1)
 The numerical summary show that the students who sit in the back of the class drink 7 times more oz/per week of alcohol than the students in the front and middle who drink 2 - 4 oz/per week. 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+The P value is 0.000116 which is less than 0.05, we fail to reject the $H_o$, we conclude that there is a relationship between where students sit and how much oz/per week of alchol is consumed.  
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+  The Tuckey graph shows there is a difference of alcohol consumptions between students who sit in the front and back,  middle and back, and there is no difference between the students who sit in the front and middle. 
+
 ## Conclusions
 
 
